@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+    <meta
+      name="description"
+      content="Pagina web de ejercitacion de Alura Challenges ONE"
+    />
+    <meta name="author" content="Lorena Eliana Tollo" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Encriptador de texto</title>
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+      
+        <div class="logo">
+          <header>
+          <img
+            class="img-logo"
+            src="img/icon/alura.svg"
+            alt="Logo de alura latam"
+          />
+          </header>
+        </div>
+      
+
+      <section class="mensaje-encriptador">
+        <textarea
+          id="textarea-men-encritador"
+          placeholder="Ingrese el texto aqui"
+        ></textarea>
+
+        <div class="aviso">
+          <img
+            class="img-aviso"
+            src="img/icon/exclametion.svg"
+            alt="icon de exclamación"
+          />
+          <p class="p-aviso">Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="botones">
+          <button onclick="encriptar()" id="boton-encripar">Encriptar</button>
+          <button onclick="desenpcriptar()" id="boton-desepcriptar">Desencriptar</button>
+        </div>
+      </section>
+      
+      <section class="encriptador">
+        <div id="textarea-encriptador">
+           <textarea  readonly   name="" id="textarea-encrip" placeholder=""></textarea>
+           <div class="loader"><div id="loader-encriptador"></div></div>
+           
+        <div id="muneco">
+          <img
+            class="img-muneco"
+            src="img/icon/muneco.svg"
+            alt="Icono de de un muñeco"
+          />
+        </div>
+        <div id="mensaje">
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p class="p-mensaje">
+            Ingresa el texto que desees encriptar o desencriptar.
+          </p>
+        </div>
+        </div>
+        <button onclick="copiarTexto()" id="boton-copiar">Copiar</button>
+      </section>
+    </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
